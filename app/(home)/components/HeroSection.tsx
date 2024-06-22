@@ -3,7 +3,6 @@ import Link from "next/link";
 import { MovingBorderButton } from "./ui/moving-border";
 import Title from "./Title";
 import { CiMail } from "react-icons/ci"
-import { AuroraBackground } from "./ui/aurora-background";
 
 function HeroSection() {
   return (

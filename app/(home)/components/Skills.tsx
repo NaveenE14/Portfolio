@@ -2,7 +2,7 @@
 import React from 'react'
 import Title from './Title'
 import { HoverEffect } from './ui/card-hover-effect'
-import { SiNextdotjs, SiReact, SiTailwindcss } from 'react-icons/si'
+import { SiNextdotjs, SiReact, SiTailwindcss,SiThealgorithms,SiMysql,SiGooglecloud } from 'react-icons/si'
 
 function Skills() {
   const skills = [
@@ -19,23 +19,22 @@ function Skills() {
       Icon : SiTailwindcss,
     },
     {
-      text : "React",
-      Icon : SiReact,
+      text : "Data Structures and Algorithms",
+      Icon : SiThealgorithms,
     },
     {
-      text : "Next.js",
-      Icon : SiNextdotjs,
+      text : "DBMS",
+      Icon : SiMysql,
     },
     {
-      text : "Tailwind",
-      Icon : SiTailwindcss,
+      text : "Cloud",
+      Icon : SiGooglecloud,
     },
   ];
   return (
-    <div className="max-w-5xl mx-auto px-8">
+    <div className="max-w-5xl mx-auto p-5 mt-20">
         <Title text="Skills🤹"  className="flex flex-col items-center justify-center w-[60%] pl-[45%]"/>
         <HoverEffect items={skills}>
-
         </HoverEffect >
     </div>
   )

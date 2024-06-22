@@ -1,6 +1,6 @@
 import React from "react";
 import Link from "next/link";
-import { SiGithub, SiLinkedin } from "react-icons/si";
+import { SiGithub, SiLinkedin , SiLeetcode } from "react-icons/si";
 function Navbar() {
   const socials = [
     {
@@ -13,6 +13,11 @@ function Navbar() {
       label: "GitHub",
       Icon: SiGithub,
     },
+    {
+      link: "https://leetcode.com/u/NaveenE/",
+      label: "Leetcode",
+      Icon: SiLeetcode,
+    },
   ];
   return (
     <nav className="py-10 flex justify-between items-center">
@@ -22,7 +27,7 @@ function Navbar() {
           const Icon = social.Icon;
           return (
             <Link href={social.link} key={index} aria-label={social.label}>
-              <Icon className="w-5 h-5 hover:scale-125 transition-all"/>
+              <Icon className="w-7 h-7 hover:scale-125 transition-all"/>
             </Link>
           );
         })}

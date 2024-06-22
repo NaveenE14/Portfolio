@@ -2,7 +2,7 @@
 import React from 'react'
 import Title from './Title'
 import { HoverEffect } from './ui/card-hover-effect'
-import { SiNextdotjs, SiReact, SiTailwindcss,SiCplusplus, SiNodedotjs , SiMongodb,SiPython,SiJavascript ,SiSelenium,SiJava, SiZoho, SiAmazonaws, SiMicrosoftazure } from 'react-icons/si'
+import { SiNextdotjs, SiReact, SiTailwindcss,SiCplusplus, SiNodedotjs , SiMongodb,SiPython,SiJavascript ,SiSelenium, SiAmazonaws, SiMicrosoftazure } from 'react-icons/si'
 import { FaJava } from "react-icons/fa";
 
 function Skills() {

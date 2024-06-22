@@ -3,6 +3,7 @@ import Link from "next/link";
 import { MovingBorderButton } from "./ui/moving-border";
 import Title from "./Title";
 import { CiMail } from "react-icons/ci"
+import { AuroraBackground } from "./ui/aurora-background";
 
 function HeroSection() {
   return (
@@ -18,8 +19,9 @@ function HeroSection() {
         }
       </p>
       <Link href="mailto:naveen.e2021eceb@sece.ac.in" className="inline-block">
-    <div className="flex items-center space-x-2">
-      <Title text="Contact me " />
+    <div className="flex items-center space-x-2 ">
+
+      <Title text="Contact me " className=""/>
       <CiMail className="w-7 h-7 text-green-500"/>
     </div>
   </Link>

@@ -1,7 +1,8 @@
 import React from "react";
 import Link from "next/link";
 import { SiGithub, SiLinkedin , SiLeetcode } from "react-icons/si";
-function Navbar() {
+import { cn } from "@/lib/utils";
+function Navbar({className}:{className?:string}) {
   const socials = [
     {
       link: "https://www.linkedin.com/in/naveen-e/",
@@ -20,8 +21,9 @@ function Navbar() {
     },
   ];
   return (
-    <nav className="py-10 flex justify-between items-center">
-      <h1 className="text-2xl font-bold underline underline-offset-8 decoration-green-500 -rotate-2"> Naveen E </h1>
+    <nav className={cn("py-10 flex justify-between items-center", 
+      className)}>
+      <h1 className="text-2xl font-bold underline underline-offset-8 decoration-green-500 -rotate-2"> NE </h1>
       <div className="flex items-center gap-5 pr-5">
         {socials.map((social, index) => {
           const Icon = social.Icon;
